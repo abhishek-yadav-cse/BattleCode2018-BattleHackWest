@@ -1,4 +1,4 @@
-## BattleHackWest-HackathonByMIT
+# BattleHackWest-HackathonByMIT
 
 Battlecode Nexus Game Spec
 
@@ -23,13 +23,12 @@ After 200 rounds, the team with greater total HP wins. If both teams have equal 
 200 rounds, the winner is determined by a coin flip.
 
 
-# Javascript Bot Reference
+## Javascript Bot Reference
 
 Javascript is the primary language supported by Battlehack West, and the target all other
 languages are compiled to, so it's a great choice to develop a bot in (especially for
 beginners). Below is a bare minimum bot example:
 
-`
 <pre>
 class MyRobot extends BCAbstractRobot {
 turn() {
@@ -37,9 +36,11 @@ return this.move(bc.NORTH);
 }
 }
 </pre>
-`
 
 The main container of your bot code is the MyRobot class, which must be a subclass of
 BCAbstractRobot . BCAbstractRobot contains all sorts of useful methods that will
 make developing your bot easier.
+
+![alt text](https://github.com/abhishek-yadav-cse/BattleCode2018-BattleHackWest/blob/master/Rule.png)
+
 
