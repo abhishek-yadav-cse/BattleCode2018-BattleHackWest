@@ -44,3 +44,29 @@ make developing your bot easier.
 ![alt text](https://github.com/abhishek-yadav-cse/BattleCode2018-BattleHackWest/blob/master/Rule.png)
 
 
+## Some default functions and values that can be used
+
+<pre>
+this.me(): Returns an object containing details about your bot, including .health and .id.
+this.log(message): Print a message to the command line. You cannot use ordinary console.log in Battlehack for security reasons.
+this.signal(integer): Set your signal bits to a certain value 0 to 15 inclusive.
+this.getRobot(id): Returns a robot object with the given integer ID. Returns null if such a robot is not in your vision.
+this.getVisibleRobots(): Returns a list of all robot objects visible to you.
+this.getVisibleMap(): Returns a 7x7 2d int array of your robot's current vision, where a value of bc.EMPTY means there's nothing there, bc.HOLE means the square is impassable, and if the value is neither hole or empty, the ID of the robot occupying that space.
+this.getRelativePos(dX,dY): A shortcut to get what's in the square (dX,dY) away. Returns a robot object if one is there, otherwise bc.EMPTY or bc.HOLE.
+this.getInDirection(direction): Returns the output of this.getRelativePos in the specified direction.
+this.move(direction): Returns an action to move in a given direction.
+this.attack(direction): Returns an action to attack in a given direction.
+bc.NORTH:2
+bc.NORTHEAST:1
+bc.EAST:0
+bc.SOUTHEAST:7
+bc.SOUTH:6
+bc.SOUTHWEST:5
+bc.WEST:4
+bc.NORTHWEST:3
+bc.EMPTY:0
+bc.HOLE:-1
+</pre>
+
+
